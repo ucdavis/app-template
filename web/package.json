@@ -27,7 +27,7 @@
     "@trpc/tanstack-react-query": "^11.4.3",
     "@ucdavis/gunrock-tailwind": "^2.4.0",
     "next": "15.4.1",
-    "next-auth": "^5.0.0-beta.29",
+    "next-auth": "^5.0.0-beta.30",
     "pino": "^9.7.0",
     "pino-elasticsearch": "^8.1.0",
     "prisma": "^6.12.0",
