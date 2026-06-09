@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { TRPCReactProvider } from '@/server/trpc/react';
+import { Footer } from '@/shared/footer';
 
 export const metadata: Metadata = {
   title: 'CRU App Template',
@@ -43,8 +44,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body data-theme='gunrock' className={`antialiased`}>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+      <body data-theme='gunrock' className='antialiased'>
+        <TRPCReactProvider>
+          <div className='min-h-screen flex flex-col'>
+            <main className='flex-1'>{children}</main>
+            <Footer />
+          </div>
+        </TRPCReactProvider>
       </body>
     </html>
   );
